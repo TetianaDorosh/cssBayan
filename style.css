@@ -29,6 +29,7 @@ html {
 .accordeon__content {
   display: flex;
   padding: 10px 0;
+  display: none;
 }
 
 .wrapper {
@@ -49,4 +50,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+.accordeon__input {
+  /* display: none; */
+}
+
+.accordeon__input:checked ~ .accordeon__content {
+  display: block;
 }
