@@ -1,0 +1,52 @@
+font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.body {
+  margin: 0 auto;
+}
+
+.accordeon {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 3rem;
+  background-color: #edf2ec;
+  max-width: 1400px;
+  padding: 20px 30px;
+}
+.content_mem {
+  width: 400px;
+  margin: auto;
+}
+
+.accordeon__content {
+  display: flex;
+  padding: 10px 0;
+}
+
+.wrapper {
+  border-bottom: 1px solid #d9d9d9;
+  cursor: pointer;
+  /* border: 2px red solid; */
+}
+
+h1 {
+  margin: 0 0 10px 10px;
+}
+
+.accordeon__label:hover {
+  color: blue;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
