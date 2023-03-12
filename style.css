@@ -36,11 +36,11 @@ html {
 .wrapper {
   border-bottom: 1px solid #d9d9d9;
   cursor: pointer;
-  /* border: 2px red solid; */
 }
 
 h1 {
   margin: 0 0 10px 10px;
+  font-size: 4rem;
 }
 
 @media (hover: hover) {
@@ -59,6 +59,7 @@ h1 {
   justify-content: space-between;
   text-align: center;
   padding: 0 20px;
+  margin: 10px 0;
 }
 
 .accordeon__input {
@@ -73,4 +74,30 @@ h1 {
   transform: rotate(0.13turn);
 }
 
-@media();
+@media screen and (max-width: 820px) {
+  .accordeon {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .content_mem {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .accordeon {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .content_mem {
+    max-width: 50%;
+  }
+}
