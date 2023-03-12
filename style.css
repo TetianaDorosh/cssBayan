@@ -43,9 +43,15 @@ h1 {
   margin: 0 0 10px 10px;
 }
 
-.accordeon__label:hover {
-  color: blue;
-  cursor: pointer;
+@media (hover: hover) {
+  .accordeon__label:hover {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .label-wrapper:hover ~ .accordeon__content {
+    display: flex;
+  }
 }
 
 .label-wrapper {
@@ -66,3 +72,5 @@ h1 {
 .accordeon__input:checked ~ .label-wrapper span {
   transform: rotate(0.13turn);
 }
+
+@media();
