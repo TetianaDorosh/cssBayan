@@ -19,11 +19,12 @@ html {
   font-size: 3rem;
   background-color: #edf2ec;
   max-width: 1400px;
+  min-height: 100vh;
   padding: 20px 30px;
 }
 .content_mem {
   width: 400px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .accordeon__content {
@@ -44,18 +45,24 @@ h1 {
 
 .accordeon__label:hover {
   color: blue;
+  cursor: pointer;
 }
 
 .label-wrapper {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   padding: 0 20px;
 }
 
 .accordeon__input {
-  /* display: none; */
+  display: none;
 }
 
 .accordeon__input:checked ~ .accordeon__content {
-  display: block;
+  display: flex;
+}
+
+.accordeon__input:checked ~ .label-wrapper span {
+  transform: rotate(0.13turn);
 }
