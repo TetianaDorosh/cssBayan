@@ -10,10 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.body {
-  margin: 0 auto;
-}
-
 .accordeon {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 3rem;
@@ -21,6 +17,7 @@ html {
   max-width: 1400px;
   min-height: 100vh;
   padding: 20px 30px;
+  margin: 0 auto;
 }
 .content_mem {
   width: 400px;
@@ -31,6 +28,8 @@ html {
   display: flex;
   padding: 10px 0;
   display: none;
+  animation: shows 2s;
+  /* transition: all 0.5s ease-out; */
 }
 
 .wrapper {
@@ -60,6 +59,7 @@ h1 {
   text-align: center;
   padding: 0 20px;
   margin: 10px 0;
+  transition: all 0.5s ease-out;
 }
 
 .accordeon__input {
