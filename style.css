@@ -1,0 +1,110 @@
+font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.accordeon {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 3rem;
+  background-color: #edf2ec;
+  max-width: 1400px;
+  min-height: 100vh;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+.content_mem {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.accordeon__content {
+  padding: 10px 0;
+  display: none;
+}
+
+.wrapper {
+  border-bottom: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0 0 10px 10px;
+  font-size: 4rem;
+}
+
+@media (hover: hover) {
+  .accordeon__label:hover {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .wrapper:hover .label-wrapper ~ .accordeon__content {
+    display: flex;
+    animation: shows 2s;
+  }
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+
+.accordeon__input {
+  display: none;
+}
+
+.accordeon__input:checked ~ .accordeon__content {
+  display: flex;
+  animation: shows 2s;
+}
+
+.accordeon__input:checked ~ .label-wrapper span {
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 820px) {
+  .accordeon {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .content_mem {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .accordeon {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .content_mem {
+    max-width: 50%;
+  }
+}
+
+@keyframes shows {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
