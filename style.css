@@ -45,7 +45,7 @@ h1 {
     cursor: pointer;
   }
 
-  .label-wrapper:hover ~ .accordeon__content {
+  .wrapper:hover .label-wrapper ~ .accordeon__content {
     display: flex;
     animation: shows 2s;
   }
